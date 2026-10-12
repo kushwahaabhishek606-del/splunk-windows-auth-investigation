@@ -29,10 +29,12 @@ index=main "4625"
 This query extracts target usernames from matching failed-logon events and returns accounts with five or more matching events in the selected search time range.
 
 ## Investigation Findings
-- Eight matching failed-logon events were observed in the previously examined results.
-- Six failed-logon records occurred within approximately 27 seconds.
-- Two successful-logon records were observed shortly afterward.
-- The available evidence does not prove that the successful logons resulted from the failures or confirm a brute-force attack.
+- Nine matching failed-logon events were displayed in the dashboard's selected time range during the latest check.
+- The username table showed `socuser` with nine matching failed-logon events.
+- The dashboard's successful-logon panel displayed 745 matching events in its selected time range.
+- Six failed-logon records were previously observed between 10:47:36 AM and 10:48:03 AM, approximately 27 seconds apart.
+- Two successful-logon records were previously observed at 10:49:09 AM.
+- These counts depend on the selected time range and search results; they should not be treated as proof of a confirmed brute-force attack.
 
 ## Dashboard and Alert
 Dashboard: `SOC L1 - Windows Authentication Monitoring`
